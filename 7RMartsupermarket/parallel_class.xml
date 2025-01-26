@@ -7,22 +7,18 @@
     </listeners>
 
     <test name="chrometest">
-        <parameter name="browser" value="chrome" ></parameter>
-        
+        <parameter name="browser" value="chrome" />
+
         <classes>
-            <class name="testscript.ManageFooterTest" >
-            
-            </class>
-            <class name="testscript.ManageNewsTest">
-                
-            </class>
-            <class name="testscript.AdminUsersTest">
-                
-            
-            </class>
-             <class name="testscript.ManageProductTest">
-                
-            </class>
+             <class name="testscript.ManageFooterTest" />
+            <!--  <class name="testscript.SubCategoryTest" />> -->
+         <!--    <class name="testscript.ManageNewsTest" /> > -->
+            <!-- <class name="testscript.AdminUsersTest" /> -->
+             <!-- <class name="testscript.ManageProductTest" /> > -->
+             
+            <!-- <class name="testscript.HomeTest" /> -->
+              <!-- <class name="testscript.LoginTest" />> -->
+            <class name="testscript.ManageContactTest" />  
         </classes>
     </test>
 

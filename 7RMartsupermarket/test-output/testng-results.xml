@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-15T21:29:16 IST" name="Suite" finished-at="2025-01-15T21:29:24 IST" duration-ms="7838">
+  <suite started-at="2025-01-25T15:39:52 IST" name="parallel_class testing" finished-at="2025-01-25T15:40:09 IST" duration-ms="16982">
     <groups>
-      <group name="regression">
-        <method signature="LoginTest.verifyTheUserUnableToLoginUsingInvalidPassword()[pri:0, instance:testscript.LoginTest@58e1d9d]" name="verifyTheUserUnableToLoginUsingInvalidPassword" class="testscript.LoginTest"/>
-      </group> <!-- regression -->
     </groups>
-    <test started-at="2025-01-15T21:29:16 IST" name="Test" finished-at="2025-01-15T21:29:24 IST" duration-ms="7838">
-      <class name="testscript.LoginTest">
-        <test-method is-config="true" signature="initializebrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@58e1d9d]" started-at="2025-01-15T21:29:16 IST" name="initializebrowser" finished-at="2025-01-15T21:29:20 IST" duration-ms="4149" status="PASS">
+    <test started-at="2025-01-25T15:39:52 IST" name="chrometest" finished-at="2025-01-25T15:40:09 IST" duration-ms="16982">
+      <class name="testscript.ManageFooterTest">
+        <test-method is-config="true" signature="initializebrowser(java.lang.String)[pri:0, instance:testscript.ManageFooterTest@4d14b6c2]" started-at="2025-01-25T15:39:52 IST" name="initializebrowser" finished-at="2025-01-25T15:39:56 IST" duration-ms="3570" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,22 +18,102 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializebrowser -->
-        <test-method signature="verifyTheUserUnableToLoginUsingInvalidPassword()[pri:0, instance:testscript.LoginTest@58e1d9d]" started-at="2025-01-15T21:29:20 IST" name="verifyTheUserUnableToLoginUsingInvalidPassword" description="Test case used to login into admin site using invalid password" finished-at="2025-01-15T21:29:23 IST" duration-ms="3020" status="PASS">
+        <test-method signature="ensureThatUpdateButtonIsDisplayedinFooterPage()[pri:0, instance:testscript.ManageFooterTest@4d14b6c2]" started-at="2025-01-25T15:39:56 IST" name="ensureThatUpdateButtonIsDisplayedinFooterPage" description="Test case used to ensure that update button is displayed in Manage Footer Text page" finished-at="2025-01-25T15:40:00 IST" duration-ms="4219" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTheUserUnableToLoginUsingInvalidPassword -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@58e1d9d]" started-at="2025-01-15T21:29:23 IST" name="browserQuit" finished-at="2025-01-15T21:29:24 IST" duration-ms="592" status="PASS">
+        </test-method> <!-- ensureThatUpdateButtonIsDisplayedinFooterPage -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageFooterTest@4d14b6c2]" started-at="2025-01-25T15:40:00 IST" name="browserQuit" finished-at="2025-01-25T15:40:00 IST" duration-ms="8" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyTheUserUnableToLoginUsingInvalidPassword status=SUCCESS method=LoginTest.verifyTheUserUnableToLoginUsingInvalidPassword()[pri:0, instance:testscript.LoginTest@58e1d9d] output={null}]]]>
+                <![CDATA[[TestResult name=ensureThatUpdateButtonIsDisplayedinFooterPage status=SUCCESS method=ManageFooterTest.ensureThatUpdateButtonIsDisplayedinFooterPage()[pri:0, instance:testscript.ManageFooterTest@4d14b6c2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-      </class> <!-- testscript.LoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        <test-method is-config="true" signature="initializebrowser(java.lang.String)[pri:0, instance:testscript.ManageFooterTest@4d14b6c2]" started-at="2025-01-25T15:40:00 IST" name="initializebrowser" finished-at="2025-01-25T15:40:03 IST" duration-ms="3244" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializebrowser -->
+        <test-method signature="validateIfUserIsAbleToeditFooterTextDetails()[pri:0, instance:testscript.ManageFooterTest@4d14b6c2]" started-at="2025-01-25T15:40:03 IST" name="validateIfUserIsAbleToeditFooterTextDetails" description="Test case used to edit Footer Text details in Manage Footer Text page" finished-at="2025-01-25T15:40:09 IST" duration-ms="5846" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateIfUserIsAbleToeditFooterTextDetails -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageFooterTest@4d14b6c2]" started-at="2025-01-25T15:40:09 IST" name="browserQuit" finished-at="2025-01-25T15:40:09 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateIfUserIsAbleToeditFooterTextDetails status=SUCCESS method=ManageFooterTest.validateIfUserIsAbleToeditFooterTextDetails()[pri:0, instance:testscript.ManageFooterTest@4d14b6c2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- testscript.ManageFooterTest -->
+      <class name="testscript.ManageContactTest">
+        <test-method is-config="true" signature="initializebrowser(java.lang.String)[pri:0, instance:testscript.ManageContactTest@7eecb5b8]" started-at="2025-01-25T15:39:52 IST" name="initializebrowser" finished-at="2025-01-25T15:39:56 IST" duration-ms="3365" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializebrowser -->
+        <test-method signature="ensureWhetherUserIsAbleToEditContactDetails()[pri:0, instance:testscript.ManageContactTest@7eecb5b8]" started-at="2025-01-25T15:39:56 IST" name="ensureWhetherUserIsAbleToEditContactDetails" description="Test case used to edit contact details in Manage Contact page" finished-at="2025-01-25T15:40:02 IST" duration-ms="5971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ensureWhetherUserIsAbleToEditContactDetails -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageContactTest@7eecb5b8]" started-at="2025-01-25T15:40:02 IST" name="browserQuit" finished-at="2025-01-25T15:40:02 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ensureWhetherUserIsAbleToEditContactDetails status=SUCCESS method=ManageContactTest.ensureWhetherUserIsAbleToEditContactDetails()[pri:0, instance:testscript.ManageContactTest@7eecb5b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="initializebrowser(java.lang.String)[pri:0, instance:testscript.ManageContactTest@7eecb5b8]" started-at="2025-01-25T15:40:02 IST" name="initializebrowser" finished-at="2025-01-25T15:40:05 IST" duration-ms="3534" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializebrowser -->
+        <test-method signature="validateWhetherUpdateButtonIsDisplayedInContactPage()[pri:0, instance:testscript.ManageContactTest@7eecb5b8]" started-at="2025-01-25T15:40:05 IST" name="validateWhetherUpdateButtonIsDisplayedInContactPage" description="Test case used to determine whether update button is displayed in Manage Contact page" finished-at="2025-01-25T15:40:08 IST" duration-ms="3078" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateWhetherUpdateButtonIsDisplayedInContactPage -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageContactTest@7eecb5b8]" started-at="2025-01-25T15:40:08 IST" name="browserQuit" finished-at="2025-01-25T15:40:08 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateWhetherUpdateButtonIsDisplayedInContactPage status=SUCCESS method=ManageContactTest.validateWhetherUpdateButtonIsDisplayedInContactPage()[pri:0, instance:testscript.ManageContactTest@7eecb5b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- testscript.ManageContactTest -->
+    </test> <!-- chrometest -->
+  </suite> <!-- parallel_class testing -->
 </testng-results>

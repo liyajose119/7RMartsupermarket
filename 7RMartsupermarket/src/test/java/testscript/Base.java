@@ -1,7 +1,9 @@
 package testscript;
 
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,12 +17,16 @@ import org.testng.annotations.BeforeMethod;
 //import org.testng.annotations.Parameters;
 import org.testng.annotations.Parameters;
 
+import constants.Constants;
 import utilities.ScreenShotUtility;
+import utilities.WaitUtility;
 
 public class Base {
 	
 	public WebDriver driver; // object is declared globally
 	public ScreenShotUtility scrshot;
+	public Properties properties;
+	public FileInputStream fileinputstream;
 	
 @BeforeMethod(alwaysRun= true)
 /*public void initializebrowser() {
@@ -34,7 +40,14 @@ public class Base {
 	
 	@Parameters ("browser")
 	public void initializebrowser(String browser) throws Exception {
-		
+		try {
+			properties=new Properties();
+			fileinputstream = new FileInputStream(Constants.CONFIGFILE);
+			properties.load(fileinputstream);
+		}
+		catch(Exception e) {
+			System.out.println("File not found");
+		}
 		
 		if (browser.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
@@ -54,8 +67,8 @@ public class Base {
 			throw new Exception("browser is not correct");
 		}
 		
-		driver.get("https://groceryapp.uniqassosiates.com/admin/login");
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.get(properties.getProperty("Url"));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(WaitUtility.IMPLICIT_WAIT));
 		driver.manage().window().maximize();
 	}
 	
@@ -67,7 +80,7 @@ public class Base {
 			scrshot.getScreenShot(driver, iTestResult.getName());// calling method using the object if test case fail pass driver and name of failed test case
 		}
 
-		 driver.quit();
+		// driver.quit();
 	}
 
 }

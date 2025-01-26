@@ -7,14 +7,20 @@
   <test thread-count="2" parallel="classes" name="chrometest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testscript.LoginTest">
+      <class name="testscript.SubCategoryTest">
         <methods>
-          <include name="verifyTheUserIsAbleToLoginUsingValidCredentials" invocation-numbers="1 2"/>
-          <include name="instalizeBrowser"/>
+          <include name="ensureWhetherUserIsAbleToAddNewSubCategory"/>
+          <include name="initializebrowser"/>
           <include name="browserQuit"/>
-          <include name="verifyTheUserUnableToLoginUsingInvalidUserName"/>
         </methods>
-      </class> <!-- testscript.LoginTest -->
+      </class> <!-- testscript.SubCategoryTest -->
+      <class name="testscript.ManageFooterTest">
+        <methods>
+          <include name="initializebrowser"/>
+          <include name="ensureThatUpdateButtonIsDisplayedinFooterPage"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- testscript.ManageFooterTest -->
     </classes>
   </test> <!-- chrometest(failed) -->
 </suite> <!-- Failed suite [parallel_class testing] -->

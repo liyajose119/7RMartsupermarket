@@ -24,21 +24,22 @@
 	Test -->
 
 
-<test name="edgetest">
-	<parameter name="browser" value="edge"></parameter>
-	<classes>
-		<class name="testscript.LoginTest">
-			<!--  <class name="testscript.ManageNewsTest"/>-->
-			<!--  <class name="testscript.ManageProductTest"/>-->
-			<!--  <class name="testscript.ManageFooterTest"/>-->
-			<!--  <class name="testscript.LoginTest"/>-->
-			<!--  <class name="testscript.Login"/>-->
-			<methods>
-				<include name="verifyTheUserUnableToLoginUsingInvalidUsernameAndPassword" />
-			</methods>
-		</class>
-	</classes>
-</test>
+	<test name="edgetest">
+		<parameter name="browser" value="edge"></parameter>
+		<classes>
+			<class name="testscript.LoginTest">
+				<!--  <class name="testscript.ManageNewsTest"/>-->
+				<!--  <class name="testscript.ManageProductTest"/>-->
+				<!--  <class name="testscript.ManageFooterTest"/>-->
+				<!--  <class name="testscript.LoginTest"/>-->
+				<!--  <class name="testscript.Login"/>-->
+				<methods>
+					<include
+						name="verifyTheUserUnableToLoginUsingInvalidUsernameAndPassword" />
+				</methods>
+			</class>
+		</classes>
+	</test>
 </suite>
  
 
